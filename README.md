@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌦 Weather Chart App
 
-## Getting Started
+A full-stack time-series weather visualization tool built with **Next.js**, **SQLite**, and **Recharts**. It allows users to select a city and a date range, and displays daily min/max temperature data.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- ✅ Min/Max temperature line chart
+- ✅ Date range selection (default: last 30 days)
+- ✅ City selection (supports New York & Tel Aviv)
+- ✅ URL sharing with pre-filled parameters
+- ✅ Server-side data fetching from SQLite
+- ✅ Input validation & graceful error handling
+- ✅ Fully responsive design
+
+---
+
+## 🧑‍💻 Technologies Used
+
+- **Frontend**: Next.js 15, React 19, Tailwind CSS, Recharts
+- **Backend**: SQLite (via `better-sqlite3` or `sqlite3`)
+- **Validation**: Zod
+- **Types**: TypeScript
+
+---
+
+## 🛠 Getting Started
+
+1. **Install dependencies**:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server:**:
+```bash
+npm run dev
+```
+## Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Example Usage
+- **You can share a specific selection using query parameters:**
+http://localhost:3000/?start=2025-06-01&end=2025-06-29&city=New+York
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## ✅ Production Readiness
+✅ Custom 404 page (not-found.tsx)
 
-To learn more about Next.js, take a look at the following resources:
+✅ Secure headers via next.config.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Graceful error handling and validation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✅ Type-safe with Zod & TypeScript
 
-## Deploy on Vercel
+✅ Clean modular code
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Future Enhancements
+🔄 Add data caching (e.g., Redis or SWR)
+
+🌍 Support more cities and units (°C/°F toggle)
+
+📈 Enable user-defined metrics or chart types
+
+🌩 Real-time weather updates (via WebSockets or polling)
+
+
+
+
